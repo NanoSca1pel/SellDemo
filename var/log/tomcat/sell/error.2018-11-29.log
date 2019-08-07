@@ -1,0 +1,6 @@
+Column 'order_amount' cannot be null
+Column 'order_status' cannot be null
+Field 'order_id' doesn't have a default value
+Field 'order_id' doesn't have a default value
+【取消订单】 订单状态不正确, orderId=1543473017987408332, orderStatus=2
+【取消订单】 订单状态不正确, orderId=1543473017987408332, orderStatus=2

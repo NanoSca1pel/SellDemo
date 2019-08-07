@@ -1,0 +1,53 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://192.168.31.250/sell?characterEncoding=utf-8&useSSL=false
+  jpa:
+    show-sql: true
+  jackson:
+    default-property-inclusion: non_null
+  redis:
+    host: 192.168.31.250
+    port: 6379
+server:
+  servlet:
+#    项目路径前缀
+    context-path: /sell
+#logging:
+#  pattern:
+#    console: "%d - %msg%n"
+#  #path会生成默认的日志文件名称
+#  #path: /sellExample/var/log/tomcat/
+#  #file可以自定义日志文件名称
+#  file: /sellExample/var/log/tomcat/sell.log
+#  #lever需要根据包名或者类名具体配置
+#  level:
+#    com.imooc: debug
+
+wechat:
+  mpAppId: wx5a36d38854cd28e9
+  mpAppSecret: 766c4fe6ca3401ee35a2946f3f414852
+  mchId: 1489811092
+  mchKey: chsosoft3188chsosoft3188chsosoft
+  keyPath: /sellExample/var/weixin_cert/h5.p12
+  notifyUrl: http://wxstore.nat300.top/sell/pay/notify
+  openAppId: wx6ad144e54af67d87
+  openAppSecret: 91a2ff6d38a2bbccfb7e9f9079108e2e
+  templateId:
+    orderStatus: xxxxxx
+
+
+
+projecturl:
+  wechatMpAuthorize: http://wxstore.nat300.top
+  wechatOpenAuthorize: http://wxstore.nat300.top
+  sell: http://wxstore.nat300.top
+
+logging:
+  level:
+    com.imooc.dataobject.mapper: trace
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml

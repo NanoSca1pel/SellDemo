@@ -1,0 +1,8 @@
+Starting LoggerTest on MSI with PID 10820 (started by lhtao in E:\sellExample)
+No active profile set, falling back to default profiles: default
+Initializing ExecutorService 'applicationTaskExecutor'
+Started LoggerTest in 2.638 seconds (JVM running for 3.561)
+info...
+name: imooc，password: 123456
+warning...
+Shutting down ExecutorService 'applicationTaskExecutor'
